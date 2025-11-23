@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <style>
+    hr {
+      border: solid skyblue 0.5px;
+      height: 1px;
+      background-color: #ccc;
+      margin: 20px 0;
+    }
+
+
+    :root {
+      --primary: skyblue;
+      --dark: black;
+      --light: white;
+    }
+
+    
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header  {
+      color: white;
+      margin-left: 24px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+
+    header nav a:hover { color: white; }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 48px 32px;
+    }
+
+    .hero-text h1 { 
+      font-size: 30px; 
+      color: red; 
+    }
+
+    .hero-text p { margin-top: 16px; 
+      max-width: 450px;
+     }
+
+    .hero-img img { 
+      width: 250px; 
+      border-radius: 50%;
+     }
+
+    
+    .section {
+       padding: 32px;
+      }
+
+    .section h2 { 
+      margin-bottom: 15px; 
+      font-size: 30px; 
+    }
+    .skills {
+       display: flex;
+        gap: 45px; 
+        margin-top: 16px;
+       }
+
+    .skill-box {
+      background: var(--primary);
+      color: white;
+      flex: 1;
+      padding: 18px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    
+    .project-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    
+    .contact-box {
+      background: white;
+      width: 300px;
+      padding: 24px;
+      border-radius: 10px;
+    }
+
+    .contact-box input,
+    .contact-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 70px;
+      border: 1px solid beige;
+      border-radius: 5px;
+    }
+
+    .contact-box button {
+      background: var(--primary);
+      color: white;
+      padding: 11px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 50px;
+      margin-top: 32px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>My Portfolio</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<hr>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I am <br><span>Full Stack Developer</span></h1>
+    <p>Building modern web applications with MERN stack.</p>
+  </div>
+  <div class="hero-img">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwRKRDbqqn3ily8fQJyYjGKww0I17Jld-ZGA&s" alt="My image" width="200" />
+  </div>
+</section>
+<hr>
+<section class="section" id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm a web developer learning MERN stack and creating modern websites...</p>
+</section>
+<hr>
+<section class="section" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <div class="skill-box">HTML (Beginner)</div>
+    <div class="skill-box">CSS (Beginner)</div>
+    <div class="skill-box">JavaScript (Learning)</div>
+  </div>
+</section>
+<hr>
+<section class="section" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-card">
+    <h3>Project 1</h3>
+    <p>A simple HTML & CSS webpage.</p>
+  </div>
+  <div class="project-card">
+    <h3>Project 2</h3>
+    <p>Another MERN project.</p>
+  </div>
+</section>
+<hr>
+<section class="section" id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-box">
+    <input type="text" placeholder="Enter your name" />
+    <input type="email" placeholder="Enter your email" />
+    <textarea placeholder="Write your message"></textarea>
+    <button>Send</button>
+  </div>
+</section>
+
+<footer>
+   All rights reserved.
+</footer>
+
+</body>
+</html>
